@@ -10,6 +10,18 @@
  */
 void puts2(char *str)
 {
+	int i;
+	int length;
+	char *p;
+
+	length = strlen(str);
+	p = &(*str);
+
+	for (i = 0; i < length; i++)
+	{
+		_putchar(*p);
+		p+=2;
+	}
 }
 
 int main(void)
